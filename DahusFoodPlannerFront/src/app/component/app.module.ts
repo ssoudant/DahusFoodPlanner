@@ -17,6 +17,10 @@ import { DayListComponent } from './day-list/day-list.component';
 
 import { RecipeService } from '../service/recipe.service';
 import { DayService } from 'app/service/day.service';
+import { ShoppingService } from 'app/service/shopping.service';
+import { CategoryListComponent } from './category-list/category-list.component';
+import { BasketEntryComponent } from './basket-entry/basket-entry.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +35,9 @@ import { DayService } from 'app/service/day.service';
     MealListComponent,
     DayEntryComponent,
     DayListComponent,
+    CategoryListComponent,
+    BasketEntryComponent,
+    CategoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +45,8 @@ import { DayService } from 'app/service/day.service';
     HttpModule
   ],
   providers: [RecipeService, 
-    DayService],
+    DayService,
+    ShoppingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
