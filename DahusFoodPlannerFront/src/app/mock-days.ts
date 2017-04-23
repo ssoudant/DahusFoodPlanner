@@ -3,7 +3,7 @@ import { DayList } from "./model/day-list";
 
 export const DAYS: Day[] = [
     {
-        id: 1, name: 'Samedi',
+        id: 1, name: 'Samedi', abbreviation: 'S',
         meals: [
             {
                 id: 1,
@@ -11,7 +11,7 @@ export const DAYS: Day[] = [
                 recipes: [{
                     id: 1,
                     title: 'Poisson Carotte',
-                    ingredients:[]
+                    ingredients: []
                 }]
             },
             {
@@ -20,12 +20,12 @@ export const DAYS: Day[] = [
                 recipes: [{
                     id: 2,
                     title: 'Pizza Calzone',
-                    ingredients:[]
+                    ingredients: []
                 }]
             }]
     },
     {
-        id: 2, name: 'Dimanche',
+        id: 2, name: 'Dimanche', abbreviation: 'D',
         meals: [
             {
                 id: 3,
@@ -33,29 +33,33 @@ export const DAYS: Day[] = [
                 recipes: [{
                     id: 3,
                     title: 'Agneau haricots verts',
-                    ingredients:[]
+                    ingredients: []
+                }, {
+                    id: 4,
+                    title: 'Cheesecake fraise',
+                    ingredients: []
                 }]
             },
             {
                 id: 4,
                 title: 'Dinner',
                 recipes: [{
-                    id: 4,
+                    id: 5,
                     title: 'Oeuf à la coque',
-                    ingredients:[]
+                    ingredients: []
                 }]
             }]
     },
     {
-        id: 3, name: 'Lundi',
+        id: 3, name: 'Lundi', abbreviation: 'L',
         meals: [
             {
                 id: 5,
                 title: 'Dinner',
                 recipes: [{
-                    id: 5,
+                    id: 6,
                     title: 'Soupe',
-                    ingredients:[]
+                    ingredients: []
                 }]
             }]
     }];

@@ -1,7 +1,7 @@
-<h1>Pouet</h1>
 <ul>
   <li *ngFor="let day of dayList.days">
-    <span>{{day.name}}</span>
+    <div class="day"><span>{{day.name}}</span></div>
+    <!-- <span>{{day.abbreviation}}</span> -->
     <app-day-entry [day]="day">Loading ...</app-day-entry>
   </li>
 </ul>
