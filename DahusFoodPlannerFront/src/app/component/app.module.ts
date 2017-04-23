@@ -15,7 +15,8 @@ import { MealListComponent } from './meal-list/meal-list.component';
 import { DayEntryComponent } from './day-entry/day-entry.component';
 import { DayListComponent } from './day-list/day-list.component';
 
-import { RecipeService } from "../service/recipe.service";
+import { RecipeService } from '../service/recipe.service';
+import { DayService } from 'app/service/day.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { RecipeService } from "../service/recipe.service";
     FormsModule,
     HttpModule
   ],
-  providers: [RecipeService],
+  providers: [RecipeService, 
+    DayService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
