@@ -10,6 +10,10 @@ import { IngredientEntryComponent } from './ingredient-entry/ingredient-entry.co
 import { IngredientListComponent } from './ingredient-list/ingredient-list.component';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { RecipeEntryComponent } from './recipe-entry/recipe-entry.component';
+import { MealEntryComponent } from './meal-entry/meal-entry.component';
+import { MealListComponent } from './meal-list/meal-list.component';
+import { DayEntryComponent } from './day-entry/day-entry.component';
+import { DayListComponent } from './day-list/day-list.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { RecipeEntryComponent } from './recipe-entry/recipe-entry.component';
     IngredientListComponent,
     RecipeListComponent,
     RecipeEntryComponent,
+    MealEntryComponent,
+    MealListComponent,
+    DayEntryComponent,
+    DayListComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,45 @@
+//import { Recipe } from './model/recipe';
+
+/*export const RECIPES: Recipe[] = [
+    { id: 1, title: 'Pizza Calzone', 
+        ingredients:[
+            {id: 1,
+            name : 'Pate pizza',
+            quantity : 1,
+            measurement : ''}, 
+            {id: 2,
+            name : 'Sauce tomate',
+            quantity : 1,
+            measurement : ''},
+            {id: 3,
+            name : 'Jambon',
+            quantity : 2,
+            measurement : 'tranche'},
+            {id: 4,
+            name : 'Mozarrella',
+            quantity : 1,
+            measurement : ''},
+            {id: 5,
+            name : 'Oeuf',
+            quantity : 1,
+            measurement : ''}]
+    },
+    { id: 2, title: 'Spaghetti carbo', 
+        ingredients:[
+            {id: 6,
+            name : 'Pâtes fraîches',
+            quantity : 250,
+            measurement : 'g'}, 
+            {id: 7,
+            name : 'Lardons',
+            quantity : 250,
+            measurement : 'g'},
+            {id: 8,
+            name : 'Oeuf',
+            quantity : 2,
+            measurement : ''},
+            {id: 9,
+            name : 'Parmesan',
+            quantity : 60,
+            measurement : 'g'}]}
+];*/
