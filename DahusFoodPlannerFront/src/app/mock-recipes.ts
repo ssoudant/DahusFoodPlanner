@@ -1,6 +1,6 @@
-//import { Recipe } from './model/recipe';
+import { Recipe } from './model/recipe';
 
-/*export const RECIPES: Recipe[] = [
+export const RECIPES: Recipe[] = [
     { id: 1, title: 'Pizza Calzone', 
         ingredients:[
             {id: 1,
@@ -42,4 +42,4 @@
             name : 'Parmesan',
             quantity : 60,
             measurement : 'g'}]}
-];*/
+];

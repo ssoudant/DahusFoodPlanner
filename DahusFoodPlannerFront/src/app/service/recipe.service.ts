@@ -7,8 +7,8 @@ export class RecipeService {
 
   constructor() { }
 
-  getRecipes() : Recipe[] {
-    return RECIPES;
+  getRecipes() : Promise<Recipe[]> {
+    return Promise.resolve(RECIPES);
   }
 
 }

@@ -15,6 +15,8 @@ import { MealListComponent } from './meal-list/meal-list.component';
 import { DayEntryComponent } from './day-entry/day-entry.component';
 import { DayListComponent } from './day-list/day-list.component';
 
+import { RecipeService } from "../service/recipe.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,7 @@ import { DayListComponent } from './day-list/day-list.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [RecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

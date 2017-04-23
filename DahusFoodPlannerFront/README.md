@@ -29,3 +29,12 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## quand la compilation à la volée ne fonctionne plus, ca peut être que le quota de fichiers vus sur l'inode est dépassé
+## voir la valeur actuelle
+sysctl fs.inotify.max_user_watches
+## positionner une nouvelle valeur (en puissance de 2, ce serait mieux)
+sysctl fs.inotify.max_user_watches=65536
+## vérifier les valeurs 
+sysctl -p --system
