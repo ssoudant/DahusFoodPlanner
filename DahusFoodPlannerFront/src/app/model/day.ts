@@ -2,6 +2,6 @@ import { Meal } from './meal';
 
 export class Day {
     id: number;
-    title : string;
+    name : string;
     meals : Meal[];
 }

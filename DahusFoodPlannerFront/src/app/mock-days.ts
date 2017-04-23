@@ -3,7 +3,7 @@ import { DayList } from "./model/day-list";
 
 export const DAYS: Day[] = [
     {
-        id: 1, title: 'Samedi',
+        id: 1, name: 'Samedi',
         meals: [
             {
                 id: 1,
@@ -18,14 +18,14 @@ export const DAYS: Day[] = [
                 id: 2,
                 title: 'Dinner',
                 recipes: [{
-                    id: 1,
+                    id: 2,
                     title: 'Pizza Calzone',
                     ingredients:[]
                 }]
             }]
     },
     {
-        id: 2, title: 'Dimanche',
+        id: 2, name: 'Dimanche',
         meals: [
             {
                 id: 3,
@@ -47,7 +47,7 @@ export const DAYS: Day[] = [
             }]
     },
     {
-        id: 3, title: 'Lundi',
+        id: 3, name: 'Lundi',
         meals: [
             {
                 id: 5,

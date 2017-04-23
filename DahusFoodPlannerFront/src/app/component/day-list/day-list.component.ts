@@ -9,15 +9,15 @@ import { Day } from 'app/model/day';
   styleUrls: ['./day-list.component.css']
 })
 export class DayListComponent implements OnInit {
-  dayList : DayList = new DayList();
-  
+  dayList: DayList = new DayList();
+
   constructor(private dayService: DayService) { }
 
   ngOnInit() {
-      this.getDays();
+    this.getDays();
   }
 
-    getDays(): void {
+  getDays(): void {
     this.dayService.getDays().then(days => this.dayList = days);
   }
 

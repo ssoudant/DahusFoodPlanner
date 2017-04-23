@@ -1,3 +1,9 @@
-<p>
-  day-entry works!
-</p>
+<div *ngIf="day">
+  <h2>{{day.title}}</h2>
+  <ul>
+    <li *ngFor="let meal of day.meals">
+      <span>{{meal.title}}</span>
+      <app-meal-entry [meal]="meal">Loading ...</app-meal-entry>
+    </li>
+  </ul>
+</div>

@@ -1,4 +1,10 @@
 <!-- <h1>{{title}}</h1> -->
-<h2>{{meal.title}}</h2>
+<h3>{{meal.title}}</h3>
 <div><label>id:</label>{{meal.id}}</div>
-<div><label>title:</label>{{meal.title}}</div>
+<div><label>title:</label>{{meal.title}}
+    <ul>
+        <li *ngFor="let recipe of meal.recipes">
+            <app-recipe-entry [recipe]="recipe">Loading ...</app-recipe-entry>
+        </li>
+    </ul>
+</div>

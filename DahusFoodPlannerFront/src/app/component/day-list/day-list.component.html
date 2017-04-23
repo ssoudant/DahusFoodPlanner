@@ -1,6 +1,7 @@
 <h1>Pouet</h1>
 <ul>
   <li *ngFor="let day of dayList.days">
-    <span>{{day.title}}</span>
+    <span>{{day.name}}</span>
+    <app-day-entry [day]="day">Loading ...</app-day-entry>
   </li>
 </ul>
