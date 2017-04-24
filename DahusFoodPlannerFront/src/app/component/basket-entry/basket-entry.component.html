@@ -1,1 +1,3 @@
-<p>{{basketEntry.quantity}} {{basketEntry.measurement}} {{basketEntry.ingredientId}}</p>
+<p [class.done]="basketEntry.done" (click)="onDone()">
+    {{basketEntry.quantity}} {{basketEntry.measurement}} {{basketEntry.ingredientId}}
+</p>

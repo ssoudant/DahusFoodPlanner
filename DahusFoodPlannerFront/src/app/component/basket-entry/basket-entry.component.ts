@@ -14,4 +14,7 @@ export class BasketEntryComponent implements OnInit {
   ngOnInit() {
   }
 
+  onDone(): void {
+    this.basketEntry.done = !this.basketEntry.done;
+  }
 }

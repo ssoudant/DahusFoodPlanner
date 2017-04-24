@@ -3,4 +3,5 @@ export class BasketEntry {
     ingredientId: number;
     quantity : number;
     measurement : string; // TODO : un énuméré ou un objet stp
+    done : boolean;
 }
