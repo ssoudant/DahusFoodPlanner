@@ -26,6 +26,43 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution> <!--mvn antrun:run@hbm2java -->
+						<id>hbm2java</id>
+						<phase>none</phase>
+						<configuration>
+							<target>
+								<echo message="Start generating entities .." />
+								<taskdef name="hibernatetool" classname="org.hibernate.tool.ant.HibernateToolTask" />
+								<hibernatetool>
+									<jdbcconfiguration revengfile="src/main/resources/hibernate.reveng.xml"
+										packagename="fr.dahus.foodplanner.restapi.model" detectmanytomany="false"
+										configurationfile="src/main/resources/hibernate.cfg.xml" />
+									<hbm2java destdir="src/main/java" jdk5="true" ejb3="true" />
+								</hibernatetool>
+								<echo message="End generating entities" />
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>org.hibernate</groupId>
+						<artifactId>hibernate-tools</artifactId>
+						<version>5.2.6.Final</version>
+					</dependency>
+					<dependency>
+						<groupId>org.postgresql</groupId>
+						<artifactId>postgresql</artifactId>
+						<version>42.1.4</version>
+					</dependency>
+				</dependencies>
+			</plugin>
 		</plugins>
 	</build>
 
