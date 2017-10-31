@@ -1,11 +1,8 @@
 package fr.dahus.foodplanner.restapi.jpa;
 
-import java.util.Collection;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -20,8 +17,5 @@ public class DayListEntity {
 
 	@Column
 	private String title;
-
-	@OneToMany(mappedBy = "dayList", targetEntity = DayEntity.class)
-	private Collection<DayEntity> days;
 
 }
