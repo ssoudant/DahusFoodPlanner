@@ -1,0 +1,15 @@
+h1 {
+    font-family: Arial;
+}
+
+ul, li {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: Arial;
+}
+
+.category {
+    background-color: darkgrey;
+    color: white;
+    font-weight:  bold;
+}

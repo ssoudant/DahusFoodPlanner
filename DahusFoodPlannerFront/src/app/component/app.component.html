@@ -1,7 +1,15 @@
 <h1>
   {{title}}
 </h1>
-<app-day-list>Loading ...</app-day-list>
+<nav>
+  <a routerLink="/days" routerLinkActive="active">Days</a>
+  <a routerLink="/shopping" routerLinkActive="active">Shopping</a>
+</nav>
+<router-outlet></router-outlet>
+<!-- <app-day-list>Loading ...</app-day-list> -->
+<!-- <app-shopping-list>Loading...</app-shopping-list> -->
+<!-- 
 <app-recipe-entry>Loading ...</app-recipe-entry>
 <app-meal-entry>Loading ...</app-meal-entry>
 <app-recipe-list>Loading ...</app-recipe-list>
+-->

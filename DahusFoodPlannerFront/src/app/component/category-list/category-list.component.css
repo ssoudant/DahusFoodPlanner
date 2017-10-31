@@ -1,10 +1,10 @@
-ul {
+li {
     list-style-type: none;
     padding-left: 0;
     font-family: Arial;
 }
 
-.day {
+.category {
     background-color: darkgrey;
     color: white;
     font-weight:  bold;
